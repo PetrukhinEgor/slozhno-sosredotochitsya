@@ -2,4 +2,191 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-image: url(../images/cover-image-dark.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "IBM Plex mono", serif;
+  width: 1024px;
+}
+
+.header {
+  display: grid;
+  color: var(--accent-color);
+  background-image: url(../images/cover-image-dark.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-block-start: 20px;
+}
+
+.header__theme-menu-button {
+  text-transform: lowercase;
+  background-color: transparent;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  border: none;
+  padding: 1px 13px;
+  min-height: 26px;
+}
+
+.header-title {
+  margin-block-start: 290px;
+  color: var(--side-color);
+  text-shadow: 4px 4px var(--accent-color);
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-weight: 700;
+  line-height: 95.7px;
+  text-align: left;
+  justify-self: left;
+  align-self: center;
+}
+
+.header-description {
+  margin-block-start: 131px;
+  margin-block-end: 135px;
+  margin-inline-end: 20px;
+  max-width: 491px;
+  justify-self: end;
+}
+
+.main {
+  background-color: var(--header-color);
+}
+
+.title-decor {
+  color: var(--header-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  background-color: var(--accent-color);
+}
+
+.hard-to-concetrate {
+  display: grid;
+  grid-template-columns: 315px 1fr;
+  column-gap: 20px;
+  margin-inline-start: 20px;
+  padding-top: 60px;
+}
+
+.section__title {
+  max-width: 315px;
+  color: var(--accent-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  text-align: left;
+}
+
+.article-list-col {
+  display: grid;
+  row-gap: 20px;
+  list-style: none;
+  justify-content: start;
+}
+
+.article__description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  text-align: left;
+  max-width: 649px;
+  color: var(--description-color);
+}
+
+.what-reduces-concentration {
+  margin-block-start: 80px;
+  margin-inline-start: 20px;
+}
+
+.article-list-row {
+  margin-block-start: 20px;
+  display: grid;
+  grid-template-columns: 315px 315px 315px;
+  column-gap: 20px;
+  align-items: start;
+}
+
+.how-to-concentrate {
+  display: grid;
+  grid-template-columns: 315px 1fr;
+  column-gap: 20px;
+  margin-inline-start: 20px;
+  margin-block-start: 80px;
+}
+
+.article__title-thin {
+  font-family: "IBM Plex mono", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  text-align: left;
+}
+
+.article-item {
+  display: grid;
+  row-gap: 10px;
+  align-content: center;
+}
+
+.section-pictures {
+  display: grid;
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
+  margin-block-start: 80px;
+  gap: 20px;
+}
+
+.table-pic {
+  display: grid;
+  gap: 20px;
+  max-width: 1024px;
+  grid-template-areas:
+    "sunset sunset ice-cream"
+    "tape books ice-cream"
+    "tape street street";
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pic__sunset {
+  grid-area: sunset;
+}
+
+.pic__ice-cream {
+  grid-area: ice-cream;
+}
+
+.pic__books {
+  grid-area: books;
+}
+
+.pic__tape {
+  grid-area: tape;
+}
+
+.pic__street {
+  grid-area: street;
+}
+
+.footer {
+  display: grid;
+  margin-block-start: 379px;
+  color: var(--side-color);
+  text-shadow: 4px 4px var(--accent-color);
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  font-weight: 700;
+  line-height: 95.7px;
+  text-align: center;
 }
