@@ -36,6 +36,31 @@
   min-height: 26px;
 }
 
+.header__theme-menu-button_active{
+  outline: 1px solid var(--accent-color);
+  padding:0 25px 0 25px;
+}
+
+.header__theme-menu-button_active:active{
+  outline: 1px solid var(--accent-color);
+}
+
+
+
+button:hover{
+  outline: 1px solid var(--outline-color);
+  padding:0 25px 0 25px;
+
+}
+
+button:focus{
+  outline: none;
+}
+
+button:focus-visible{
+  border-bottom: 1px solid var(--outline-color);
+}
+
 .header-title {
   margin-block-start: 290px;
   color: var(--side-color);
@@ -99,6 +124,23 @@
   text-align: left;
   max-width: 649px;
   color: var(--description-color);
+}
+
+.link__in-text{
+  text-shadow: 2px 2px var(--accent-color);
+  text-decoration: none;
+}
+
+.link__in-text:hover{
+  text-decoration: underline;
+}
+
+.link__in-text:focus{
+  outline: none;
+}
+
+.link__in-text:focus-visible{
+  outline: 1px solid var(--description-color);
 }
 
 .what-reduces-concentration {
@@ -181,12 +223,20 @@ img {
 }
 
 .footer {
+  background-color: var(--header-color);
+  width: 1024px;
+  height: 768px;
   display: grid;
-  margin-block-start: 379px;
+  margin-block-start: 60px;
+}
+
+.footer__title{
   color: var(--side-color);
-  text-shadow: 4px 4px var(--accent-color);
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  font-weight: 700;
-  line-height: 95.7px;
-  text-align: center;
+  text-shadow: 2px 2px var(--accent-color);
+  font-size: 157px;
+  line-height: 129.53px;
+  text-align: left;
+  justify-self: center;
+  align-self: center;
+
 }
