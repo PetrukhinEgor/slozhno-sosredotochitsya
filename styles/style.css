@@ -7,7 +7,6 @@
   background-position: center;
   background-attachment: fixed;
   font-family: "IBM Plex mono", serif;
-  width: 1024px;
 }
 
 .header {
@@ -16,6 +15,48 @@
   background-image: url(../images/cover-image-dark.png);
   background-size: cover;
   background-position: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+.header::after{
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-right:1px solid var(--accent-color);
+  border-top: 1px solid var(--accent-color);
+  top:10px;
+  right: 10px;
+}
+
+.REC__container-dot{
+  position: absolute;
+  right: 0;
+  top:0;
+  border:1px solid yellow;
+}
+
+/* Надпись REC */
+.REC__container-dot::before{
+  content: "REC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size:18px;
+  margin-inline-end:10px;
+}
+/* Точка для надписи REC */
+.REC__container-dot::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 15px;
+  width: 9px;
+  height: 9px;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  border-radius: 50%;
 }
 
 .header__theme-menu-list {
@@ -23,6 +64,9 @@
   justify-content: center;
   gap: 10px;
   margin-block-start: 20px;
+  position: absolute;
+  top:0;
+  width: 100%;
 }
 
 .header__theme-menu-button {
@@ -38,22 +82,23 @@
 
 .header__theme-menu-button_active{
   outline: 1px solid var(--accent-color);
-  padding:0 25px 0 25px;
+  /* padding:0 25px 0 25px; */
 }
 
 .header__theme-menu-button_active:active{
   outline: 1px solid var(--accent-color);
 }
 
-
+button:disabled{
+  pointer-events: none;
+}
 
 button:hover{
   outline: 1px solid var(--outline-color);
-  padding:0 25px 0 25px;
-
+  /* padding:0 25px 0 25px; */
 }
 
-button:focus{
+a,button:focus{
   outline: none;
 }
 
@@ -225,9 +270,9 @@ img {
 .footer {
   background-color: var(--header-color);
   width: 1024px;
-  height: 768px;
+  height: 85vh;
   display: grid;
-  margin-block-start: 60px;
+  padding-top: 60px;
 }
 
 .footer__title{
@@ -238,5 +283,67 @@ img {
   text-align: left;
   justify-self: center;
   align-self: center;
+}
+
+
+.decor__corners_footer-top {
+  position: absolute;
+}
+
+.decor__corners_footer-top::before{
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 979px;
+  width: 25px;
+  border-top: 1px solid var(--accent-color);
+}
+.decor__corners_footer-top::after{
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 1003px;
+  height: 25px;
+  border-right: 1px solid var(--accent-color);
+}
+
+.decor__corners_footer-bottom {
+  position: absolute;
+}
+
+.decor__corners_footer-bottom::before{
+  content: "";
+  position: absolute;
+  top: 712px;
+  left: 20px;
+  height: 25px;
+  border-left: 1px solid var(--accent-color);
+}
+
+.decor__corners_footer-bottom::after{
+  content: "";
+  position: absolute;
+  top: 736px;
+  left: 20px;
+  width: 25px;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+/* @media (max-width:1024px){
+
+.page{
+  width: 768px;
+}
+
+.header__theme-menu-list {
+  right: 20px;
+  top:192px;
+  flex-direction: column;
+  width: max-content;
 
 }
+
+.header-description{
+  width: 364px;
+}
+} */
