@@ -4,11 +4,9 @@
 */
 :root {
   /* Переменные тёмной темы */
-  --accent-color: #ff0070;
-  --side-color:#DB00FF;
-  --header-color:#000028;
-  --description-color:#F1B2CE;
-  --outline-color:#353430;
-
+  --accent-color: #FF0070;
+  --front-color:#DB00FF;
+  --text-color:#F1B2CE;
+  --background-color:#000028;
 
 }

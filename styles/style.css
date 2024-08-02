@@ -5,11 +5,188 @@
   background-image: url(../images/cover-image-dark.png);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   font-family: "IBM Plex mono", serif;
+  color:var(--text-color);
 }
 
-.header {
+.decorated-zone{
+  position: relative;
+}
+
+.decorated-zone::after{
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-right:1px solid var(--accent-color);
+  border-top: 1px solid var(--accent-color);
+  top:10px;
+  right: 10px;
+}
+
+.decorated-zone::before{
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  left: 10px;
+  bottom: 10px;
+}
+
+.rec{
+  text-transform: uppercase;
+  color: var(--accent-color);
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  column-gap: 10px;
+  font-size: 18px;
+}
+
+.rec::after{
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  position: relative;
+  align-self: center;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+.header{
+  display: grid;
+  min-height: 100vh;
+  padding: 0 10px;
+}
+
+.header__theme-menu{
+  /* align-self: center; */
+  justify-self: end;
+}
+
+.header__theme-menu-list{
+  display: grid;
+  row-gap: 10px;
+}
+
+.header__theme-menu-button{
+  background-color: transparent;
+  border: none;
+  text-transform: lowercase;
+  color:var(--accent-color);
+  padding: 2px 13px;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+
+}
+
+.header__theme-menu-button_active{
+  pointer-events: none;
+  outline: 1px solid var(--accent-color);
+}
+
+.header__title{
+  color: var(--front-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 95.7px;
+  text-align: left;
+  align-self: center;
+}
+
+.header__description{
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  text-align: left;
+
+}
+
+.title__decor{
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  font-weight: 700;
+  font-size:18px;
+}
+
+/* .header{
+  display: grid;
+  min-height: 100vh;
+  padding: 0 10px;
+}
+
+.header__text{
+  display: grid;
+}
+
+.header__title{
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: var(--front-color);
+  text-shadow: 4px 4px var(--accent-color);
+  font-weight: 700;
+  line-height: 95.7px;
+  text-align: left;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.header__description{
+
+}
+
+
+
+button, a:focus{
+  outline: none;
+}
+
+.header__theme-menu{
+  margin-block-start: 75px;
+  justify-self: end;
+  align-content: center;
+}
+
+.header__theme-menu-list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;  
+}
+
+.header__theme-menu-item{
+font-size: 18px;
+font-weight: 400;
+line-height: 18px;
+text-align: center;
+
+}
+
+
+.header__theme-menu-button{
+  text-transform: lowercase;
+  color: var(--accent-color);
+  background-color: transparent;
+  border: none;
+  font-size:18px;
+  padding:2px 13px 2px 13px;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  outline: 1px solid var(--accent-color);
+} */
+
+
+/* =============================================== */
+
+ /* .header {
   display: grid;
   color: var(--accent-color);
   background-image: url(../images/cover-image-dark.png);
@@ -37,7 +214,7 @@
   border:1px solid yellow;
 }
 
-/* Надпись REC */
+
 .REC__container-dot::before{
   content: "REC";
   position: absolute;
@@ -46,7 +223,6 @@
   font-size:18px;
   margin-inline-end:10px;
 }
-/* Точка для надписи REC */
 .REC__container-dot::after{
   content: "";
   position: absolute;
@@ -82,7 +258,6 @@
 
 .header__theme-menu-button_active{
   outline: 1px solid var(--accent-color);
-  /* padding:0 25px 0 25px; */
 }
 
 .header__theme-menu-button_active:active{
@@ -95,7 +270,6 @@ button:disabled{
 
 button:hover{
   outline: 1px solid var(--outline-color);
-  /* padding:0 25px 0 25px; */
 }
 
 a,button:focus{
@@ -327,23 +501,4 @@ img {
   left: 20px;
   width: 25px;
   border-bottom: 1px solid var(--accent-color);
-}
-
-/* @media (max-width:1024px){
-
-.page{
-  width: 768px;
-}
-
-.header__theme-menu-list {
-  right: 20px;
-  top:192px;
-  flex-direction: column;
-  width: max-content;
-
-}
-
-.header-description{
-  width: 364px;
-}
 } */
