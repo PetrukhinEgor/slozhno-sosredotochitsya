@@ -4,9 +4,59 @@
   переключая тему
 */
 
+
+
+:root.theme-light {
+  --rec:hidden;
+  --corners-color:#353430;
+  --section__title-color:#353430;
+  --shadow-color:#FF0070;
+  --accent-color: #FF8DCB;
+  --front-color:#FFC2E6;
+  --background-color:#000028;
+  --text-color:#353430;
+  --description__text-color:#353430;
+  --advice__text-color:#353430;
+  --button-color:#353430;
+  --back-image: url(../images/cover-image-light.png);
+}
+
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --rec:hidden;
+  --corners-color:#353430;
+  --section__title-color:#353430;
+  --shadow-color:#FF0070;
+  --accent-color: #FF8DCB;
+  --front-color:#FFC2E6;
+  --background-color:#000028;
+  --text-color:#353430;
+  --description__text-color:#353430;
+  --advice__text-color:#353430;
+  --button-color:#353430;
+  --back-image: url(../images/cover-image-light.png);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+        /* Дублируем переменные светлой темы */   
+        --rec:hidden;
+        --corners-color:#353430;
+        --section__title-color:#353430;
+        --shadow-color:#FF0070;
+        --accent-color: #FF8DCB;
+        --front-color:#FFC2E6;
+        --background-color:#000028;
+        --text-color:#353430;
+        --description__text-color:#353430;
+        --advice__text-color:#353430;
+        --button-color:#353430;
+        --back-image: url(../images/cover-image-light.png);
+
+}
+
+
 }

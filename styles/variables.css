@@ -4,9 +4,15 @@
 */
 :root {
   /* Переменные тёмной темы */
+  --rec:visible;
+  --section__title-color:#FF0070;
+  --shadow-color:#FF0070;
   --accent-color: #FF0070;
   --front-color:#DB00FF;
-  --text-color:#F1B2CE;
   --background-color:#000028;
-
+  --text-color:#F1B2CE;
+  --description__text-color:#000028;
+  --advice__text-color:#000028;
+  --button-color:#FF0070;
+  --back-image: url(../images/cover-image-dark.png);
 }
