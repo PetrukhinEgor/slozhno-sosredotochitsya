@@ -5,10 +5,10 @@
   background-image: var(--back-image), url(../images/cover-image-dark.png);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   font-family: "IBM Plex mono", serif;
   color: var(--text-color);
+  background-attachment: fixed;
 }
 
 .header {
