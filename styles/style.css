@@ -13,7 +13,7 @@
 
 .header {
   display: grid;
-  /* min-height: 100vh; */
+  min-height: 668px;
   height: 100vh;
   padding: 0 10px;
   align-content: space-evenly;
@@ -216,7 +216,7 @@
 
 .footer {
   display: grid;
-  /* min-height: 100vh; */
+  min-height: 668px;
   height: 100vh;
   align-content: center;
 }
@@ -369,7 +369,6 @@
 
 @media (width >= 1024px) {
   .header {
-    min-height: 668px;
     padding: 0;
     align-content: unset;
     align-items: start;
@@ -415,9 +414,5 @@
 
   .how-to-concentrate {
     grid-template-columns: 315px 1fr;
-  }
-
-  .footer {
-    min-height: 668px;
   }
 }
