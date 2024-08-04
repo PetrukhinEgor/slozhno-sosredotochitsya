@@ -40,3 +40,13 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+button,
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}

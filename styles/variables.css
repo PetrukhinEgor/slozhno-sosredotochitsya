@@ -4,15 +4,16 @@
 */
 :root {
   /* Переменные тёмной темы */
+  --button-color-opacity:#FF007066;
   --rec: visible;
-  --section__title-color: #ff0070;
+  --section-title-color: #ff0070;
   --shadow-color: #ff0070;
   --accent-color: #ff0070;
   --front-color: #db00ff;
   --background-color: #000028;
   --text-color: #f1b2ce;
-  --description__text-color: #000028;
-  --advice__text-color: #000028;
+  --description-text-color: #000028;
+  --advice-text-color: #000028;
   --button-color: #ff0070;
   --back-image: url(../images/cover-image-dark.png);
 }
