@@ -180,7 +180,7 @@
   border-bottom: 1px solid var(--text-color);
 }
 
-.section{
+.section {
   display: grid;
   gap: 20px;
 }
@@ -347,8 +347,8 @@
     grid-column-start: span 2;
     grid-row-start: span 2;
   }
-  
-  .footer{
+
+  .footer {
     min-height: 668px;
   }
 
@@ -411,14 +411,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    
   }
 
   .how-to-concentrate {
     grid-template-columns: 315px 1fr;
   }
-  
-  .footer{
+
+  .footer {
     min-height: 668px;
   }
 }
